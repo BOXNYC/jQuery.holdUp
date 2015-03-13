@@ -3,8 +3,8 @@ Displays an overloay with spinner to tell users to hold up.
 
 # CDN:
 
-# JS
+## JS
 //cdn.rawgit.com/BOXNYC/jQuery.holdUp/master/jQuery.holdUp-0.1.js
 
-# CSS
+## CSS
 //cdn.rawgit.com/BOXNYC/jQuery.holdUp/master/jQuery.holdUp-0.1.css
