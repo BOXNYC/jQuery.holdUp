@@ -76,10 +76,8 @@
 
         create: function () {
             var ops = this.options;
-            ops.imgUrl = ops.imgUrl.replace('[size]', ops.size + 'x' + ops.size);
             this.loading = this.template($.holdUp.tmpl, {
                 Class: 'x' + ops.size,
-                Src: ops.imgUrl,
                 Title: ops.title
             }).hide();
             this.loading.appendTo($('body'));
@@ -97,10 +95,10 @@
             loading.css('top', top);
 
             if (scope.is('body')) {
-                height = $(window).height();
-                width = $(window).width();
+                var $window = $(window);
+                height = $window.height();
+                width = $window.width();
                 loading.css('position', 'fixed');
-
                 this.for_ie6();
             }
 
