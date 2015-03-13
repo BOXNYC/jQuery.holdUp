@@ -8,20 +8,17 @@
     $.holdUpExt = {
 
         defaults: {
-            autoCheck: 32, //自动检测大容器，并使用的指定size
-            css: {}, //自定义样式
-            size: 16,  //指定菊花大小
-            bgColor: '#FFF',   //背景颜色
-            bgOpacity: 0.5,    //背景透明度
-            fontColor: false,  //文字颜色
-            position: [0, 0, 0, 0],    //偏移设置 上左高宽
-            title: '', //文字
+            autoCheck: 32,
+            css: {},
+            size: 32,
+            bgColor: '#FFF',
+            bgOpacity: 0.5,
+            fontColor: false,
+            position: [0, 0, 0, 0],
+            title: '',
             isOnly: true,
-            imgUrl: 'images/loading[size].gif',
-            onShow: function () {
-            },  //打开回调
-            onClose: function () {
-            }  //关闭回调
+            onShow: function () {},
+            onClose: function () {}
         },
 
         template: function (tmpl, data) {
@@ -182,7 +179,7 @@
     };
 
     $.holdUp = {
-        tmpl: '<div class="hold-up-loading-wrapper"><div class="hold-up-loading ${Class}"><img src="${Src}" /><span>${Title}</span></div></div>',
+        tmpl: '<div class="hold-up-loading-wrapper"><div class="hold-up-loading ${Class}"><div class="img"></div><span>${Title}</span></div></div>',
         open: function (arg) {
             return $('body').holdUp(arg);
         },
