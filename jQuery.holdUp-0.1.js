@@ -161,7 +161,6 @@
             });
         },
 
-        // 关闭菊花
         close: function (all) {
             if (all) {
                 var className = $($.holdUp.tmpl).attr('class');
